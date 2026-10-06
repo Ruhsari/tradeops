@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TradeOps — Orders</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+  <div class="sidebar__logo">TradeOps</div>
+
+  <nav class="menu">
+    <a href="index.html" class="menu__item">
+      <img src="icons/products.svg" alt="" class="menu__icon">
+      <span>Products</span>
+    </a>
+    <a href="orders.html" class="menu__item menu__item--active">
+      <img src="icons/orders.svg" alt="" class="menu__icon">
+      <span>Orders</span>
+    </a>
+    <a href="browse.html" class="menu__item">
+      <img src="icons/browse.svg" alt="" class="menu__icon">
+      <span>Browse</span>
+    </a>
+    <a href="cart.html" class="menu__item">
+      <img src="icons/cart.svg" alt="" class="menu__icon">
+      <span>My cart</span>
+    </a>
+    <a href="categories.html" class="menu__item">
+      <img src="icons/categories.svg" alt="" class="menu__icon">
+      <span>Categories</span>
+    </a>
+    <a href="staff.html" class="menu__item">
+      <img src="icons/staff.svg" alt="" class="menu__icon">
+      <span>Staff Logins</span>
+    </a>
+  </nav>
+
+  <div class="sidebar__bottom">
+    <div class="theme-toggle">
+      <span>Dark mode</span>
+      <div class="switch"><div class="switch__knob"></div></div>
+    </div>
+    <a href="settings.html" class="sidebar__link">Settings</a>
+    <a href="#" class="sidebar__link">Log Out</a>
+  </div>
+</aside>
+    <main class="main">
+  <header class="topbar">
+    <label class="search">
+      <img src="icons/search.svg" alt="" class="search__icon">
+      <input type="text" class="search__input" placeholder="Search">
+    </label>
+
+    <div class="topbar__user">
+      <button class="icon-btn" type="button">
+        <img src="icons/settings.svg" alt="Settings">
+      </button>
+
+      <div class="avatar"></div>
+
+      <div class="user-info">
+        <span class="user-info__name">User User</span>
+        <span class="user-info__email">test@gmail.com</span>
+      </div>
+
+      <button class="chevron-btn" type="button">
+        <img src="icons/chevron-down.svg" alt="Open menu">
+      </button>
+    </div>
+  </header>
+
+  
+  <section class="page-header page-header--center">
+  <h1 class="page-header__title">Your orders</h1>
+  <a href="#" class="sync">
+    <img src="icons/sync.svg" alt="" class="sync__icon">
+    <span>Sync Orders</span>
+  </a>
+</section>
+
+<section class="card">
+  <div class="table">
+    <div class="table__row table__row--orders table__row--head">
+      <div>Order ID</div>
+      <div>Customer</div>
+      <div>Total price</div>
+      <div>Status</div>
+      <div>Items</div>
+      <div>Order date</div>
+    </div>
+
+    <div class="table__row table__row--orders">
+      <div class="table__name">#39</div>
+      <div class="customer">
+        <span class="customer__name">N. ABDYKARYYMOV</span>
+        <span class="customer__info">0558108018</span>
+        <span class="customer__info">nurislam.mac@gmail.com</span>
+      </div>
+      <div class="table__name">$599.00</div>
+      <div><span class="badge badge--completed">COMPLETED</span></div>
+      <div><a href="#" class="btn btn--outline" data-modal-open="order-details">Details</a></div>
+      <div class="table__date">2026-09-29 15:09</div>
+    </div>
+
+    <div class="table__row table__row--orders">
+      <div class="table__name">#40</div>
+      <div class="customer">
+        <span class="customer__name">N. ABDYKARYYMOV</span>
+        <span class="customer__info">0558108018</span>
+        <span class="customer__info">nurislam.mac@gmail.com</span>
+      </div>
+      <div class="table__name">$3132.00</div>
+      <div><span class="badge badge--new">NEW</span></div>
+      <div><a href="#" class="btn btn--outline" data-modal-open="order-details">Details</a></div>
+      <div class="table__date">2026-10-01 14:23</div>
+    </div>
+  </div>
+</section>
+
+
+
+</main>
+
+
+
+
+<div class="modal" id="order-details" hidden>
+  <div class="modal__dialog">
+    <header class="modal__header modal__header--accent">
+      <h2 class="modal__title">Order Details - #39</h2>
+      <button class="modal__close" type="button" data-modal-close>
+        <img src="icons/close.svg" alt="Close">
+      </button>
+    </header>
+
+    <div class="modal__body">
+      <h3 class="modal__section-title">Order info</h3>
+
+      <div class="info-grid info-grid--three">
+        <div class="field field--small">
+          <div class="field__label">Order ID</div>
+          <div class="field__value">#39</div>
+        </div>
+        <div class="field field--small">
+          <div class="field__label">Customer</div>
+          <div class="field__value">N. ABDYKAYYMOV</div>
+        </div>
+        <div class="field field--small">
+          <div class="field__label">Phone</div>
+          <div class="field__value">0558108018</div>
+        </div>
+        <div class="field field--small">
+          <div class="field__label">Email</div>
+          <div class="field__value">nurislam.mac@gmail.com</div>
+        </div>
+        <div class="field field--small">
+          <div class="field__label">Delivery address</div>
+          <div class="field__value">Бишкек, Волкова, N. ABDYKAYYMOV, nurislam.mac@gmail.com</div>
+        </div>
+        <div class="field field--small">
+          <div class="field__label">Total amount</div>
+          <div class="field__value">$24150.00</div>
+        </div>
+        <div class="field field--small">
+          <div class="field__label">Status</div>
+          <div class="field__value">COMPLETED</div>
+        </div>
+        <div class="field field--small">
+          <div class="field__label">Order date</div>
+          <div class="field__value">2026-09-29 15:09</div>
+        </div>
+        <div class="field field--small">
+          <div class="field__label">Last synced</div>
+          <div class="field__value">2026-09-29 15:29</div>
+        </div>
+      </div>
+
+      <h3 class="modal__section-title modal__section-title--second">Order items</h3>
+
+      <div class="items">
+        <div class="items__row items__row--head">
+          <div>Product name</div>
+          <div>Quantity</div>
+          <div>Unit price</div>
+          <div>Subtotal</div>
+        </div>
+        <div class="items__row items__row--line">
+          <div class="items__name">Nothing Phone 4a</div>
+          <div>35</div>
+          <div>$690.00</div>
+          <div>$24150.00</div>
+        </div>
+        <div class="items__total">
+          <div>Order Total:</div>
+          <div>$24150.00</div>
+        </div>
+      </div>
+
+      <div class="modal__footer">
+        <button type="button" class="btn btn--outline btn--close" data-modal-close>Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+
+  </div>
+</body>
+</html>

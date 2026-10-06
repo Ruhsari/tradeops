@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TradeOps — Account settings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+  <div class="sidebar__logo">TradeOps</div>
+
+  <nav class="menu">
+    <a href="index.html" class="menu__item">
+      <img src="icons/products.svg" alt="" class="menu__icon">
+      <span>Products</span>
+    </a>
+    <a href="orders.html" class="menu__item">
+      <img src="icons/orders.svg" alt="" class="menu__icon">
+      <span>Orders</span>
+    </a>
+    <a href="browse.html" class="menu__item">
+      <img src="icons/browse.svg" alt="" class="menu__icon">
+      <span>Browse</span>
+    </a>
+    <a href="cart.html" class="menu__item">
+      <img src="icons/cart.svg" alt="" class="menu__icon">
+      <span>My cart</span>
+    </a>
+    <a href="categories.html" class="menu__item">
+      <img src="icons/categories.svg" alt="" class="menu__icon">
+      <span>Categories</span>
+    </a>
+    <a href="staff.html" class="menu__item">
+      <img src="icons/staff.svg" alt="" class="menu__icon">
+      <span>Staff Logins</span>
+    </a>
+  </nav>
+
+  <div class="sidebar__bottom">
+    <div class="theme-toggle">
+      <span>Dark mode</span>
+      <div class="switch"><div class="switch__knob"></div></div>
+    </div>
+    <a href="settings.html" class="sidebar__link sidebar__link--active">Settings</a>
+    <a href="#" class="sidebar__link">Log Out</a>
+  </div>
+</aside>
+    <main class="main">
+  <header class="topbar topbar--right">
+    
+
+    <div class="topbar__user">
+      <button class="icon-btn" type="button">
+        <img src="icons/settings.svg" alt="Settings">
+      </button>
+
+      <div class="avatar"></div>
+
+      <div class="user-info">
+        <span class="user-info__name">User User</span>
+        <span class="user-info__email">test@gmail.com</span>
+      </div>
+
+      <button class="chevron-btn" type="button">
+        <img src="icons/chevron-down.svg" alt="Open menu">
+      </button>
+    </div>
+  </header>
+  <section class="settings">
+  <h1 class="page-header__title">Account settings</h1>
+
+  <div class="settings__grid">
+    <div class="field">
+      <div class="field__label">Business name</div>
+      <div class="field__value">Sapa</div>
+    </div>
+
+    <div class="field">
+      <div class="field__label">API Key</div>
+      <div class="api-key">
+        <span class="api-key__dots">••••••••••••••••••••••••••••••••••••</span>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="field__label">Email</div>
+      <div class="field__value">test@gmail.com</div>
+    </div>
+
+    <div class="field">
+      <div class="field__label">Account status</div>
+      <div><span class="badge badge--stock">Active</span></div>
+    </div>
+  </div>
+
+  <a href="#" class="btn btn--accent btn--edit" data-modal-open="edit-account">
+    <img src="icons/pencil.svg" alt="" class="btn__icon">
+    <span>Edit</span>
+  </a>
+</section>
+
+</main>
+
+
+
+<div class="modal" id="edit-account" hidden>
+  <div class="modal__dialog modal__dialog--form">
+    <div class="modal__body modal__body--form">
+      <h3 class="modal__section-title modal__section-title--plain">Edit Account</h3>
+
+      <form class="staff-form account-form">
+        <div class="staff-form__field">
+          <label class="staff-form__label" for="acc-business">Business name</label>
+          <input class="staff-form__control" type="text" id="acc-business" value="Sapa">
+        </div>
+
+        <div class="staff-form__field">
+          <label class="staff-form__label" for="acc-email">Email</label>
+          <input class="staff-form__control" type="email" id="acc-email" value="test@gmail.com">
+        </div>
+
+        <div class="account-form__break"></div>
+
+        <div class="staff-form__field">
+          <label class="staff-form__label" for="acc-old">Old password</label>
+          <input class="staff-form__control" type="password" id="acc-old" placeholder="Write old password">
+        </div>
+
+        <div class="staff-form__field">
+          <label class="staff-form__label" for="acc-new">New password</label>
+          <input class="staff-form__control" type="password" id="acc-new" placeholder="Write new password">
+        </div>
+
+        <div class="staff-form__field">
+          <label class="staff-form__label" for="acc-repeat">Repeat new password</label>
+          <input class="staff-form__control" type="password" id="acc-repeat" placeholder="Repeat new password">
+        </div>
+
+        <div class="staff-form__field account-form__status">
+          <span class="staff-form__label">Status</span>
+          <button type="button" class="btn btn--danger btn--deactivate">Disactivate</button>
+        </div>
+
+        <div class="account-form__actions">
+          <button type="button" class="btn btn--lime-soft" data-modal-close>Return</button>
+          <button type="submit" class="btn btn--accent btn--submit-save">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

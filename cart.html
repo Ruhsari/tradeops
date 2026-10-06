@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TradeOps — My cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+  <div class="sidebar__logo">TradeOps</div>
+
+  <nav class="menu">
+    <a href="products.html" class="menu__item">
+      <img src="icons/products.svg" alt="" class="menu__icon">
+      <span>Products</span>
+    </a>
+    <a href="orders.html" class="menu__item">
+      <img src="icons/orders.svg" alt="" class="menu__icon">
+      <span>Orders</span>
+    </a>
+    <a href="browse.html" class="menu__item">
+      <img src="icons/browse.svg" alt="" class="menu__icon">
+      <span>Browse</span>
+    </a>
+    <a href="cart.html" class="menu__item menu__item--active">
+      <img src="icons/cart.svg" alt="" class="menu__icon">
+      <span>My cart</span>
+    </a>
+    <a href="categories.html" class="menu__item">
+      <img src="icons/categories.svg" alt="" class="menu__icon">
+      <span>Categories</span>
+    </a>
+    <a href="staff.html" class="menu__item">
+      <img src="icons/staff.svg" alt="" class="menu__icon">
+      <span>Staff Logins</span>
+    </a>
+  </nav>
+
+  <div class="sidebar__bottom">
+    <div class="theme-toggle">
+      <span>Dark mode</span>
+      <div class="switch"><div class="switch__knob"></div></div>
+    </div>
+    <a href="settings.html" class="sidebar__link">Settings</a>
+    <a href="#" class="sidebar__link">Log Out</a>
+  </div>
+</aside>
+    <main class="main">
+  <header class="topbar">
+    <label class="search">
+      <img src="icons/search.svg" alt="" class="search__icon">
+      <input type="text" class="search__input" placeholder="Search">
+    </label>
+
+    <div class="topbar__user">
+      <button class="icon-btn" type="button">
+        <img src="icons/settings.svg" alt="Settings">
+      </button>
+
+      <div class="avatar"></div>
+
+      <div class="user-info">
+        <span class="user-info__name">User User</span>
+        <span class="user-info__email">test@gmail.com</span>
+      </div>
+
+      <button class="chevron-btn" type="button">
+        <img src="icons/chevron-down.svg" alt="Open menu">
+      </button>
+    </div>
+  </header>
+  <section class="page-header">
+  <div class="page-header__text">
+    <h1 class="page-header__title">Your cart</h1>
+    <p class="page-header__subtitle">Review and save your selected products</p>
+  </div>
+  <div class="page-header__actions page-header__actions--center">
+    <a href="browse.html" class="btn btn--accent btn--browsing">
+      <img src="icons/search-white.svg" alt="" class="btn__icon">
+      <span>Browsing</span>
+    </a>
+    <a href="#" class="link-danger">Clear cart</a>
+  </div>
+</section>
+
+<section class="card empty-state">
+  <img src="icons/cart-empty.svg" alt="" class="empty-state__icon">
+  <h2 class="empty-state__title">Your cart is empty</h2>
+  <p class="empty-state__text">Browse products and add items to your cart.</p>
+
+</section>
+
+</main>
+  </div>
+</body>
+</html>
